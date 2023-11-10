@@ -13,6 +13,8 @@
 
 body {
     background-color: #201f1f;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 .bg-container-header {
@@ -45,7 +47,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+    width: 100%;
 }
 
 .contato-container h2 {
@@ -67,7 +69,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 85px;
-    width: 50%;
+    width: 100%;
 }
 
 .box-container {
@@ -287,11 +289,11 @@ footer img {
 
 @media (max-width: 660px) {
     .contato-container form input {
-        width: 60%;
+        width: 70%;
     }
 
     .contato-container form textarea {
-        width: 60%;
+        width: 70%;
     }
 
     .links-container {
