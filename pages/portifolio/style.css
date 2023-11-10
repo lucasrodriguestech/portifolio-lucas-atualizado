@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+body {
+    background-color: #201f1f;
+}
+
+body h1 {
+    text-align: center;
+    padding: 35px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.bg-container-header {
+    background-image: url(../../assets/cidade.png);
+    height: 50vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 0;
+}
+
+.bg-container-header h1 {
+    color: #fff;
+    color: #fff;
+    padding: 10px;
+    border: 3px solid #fff;
+    font-size: 3rem;
+    z-index: 1;
+    filter: brightness(200%);
+}
+
+.menu-container {
+    position: absolute;
+    z-index: 999;
+    top: 55px;
+    right: 55px;
+    border: 1px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-container {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    top: 105px;
+    right: 45px;
+    background-color: #474343;
+    padding: 19px;
+    border-radius: 3px;
+    z-index: 999;
+    gap: 19px;
+    
+}
+
+.projetos-container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.projeto {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 25px;
+}
+
+.projeto img {
+    width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+    height: 350px; /* Mantém a proporção original da imagem */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor das imagens */
+    border-radius: 5px; /* Adiciona uma borda arredondada às imagens */
+    margin-bottom: 10px; /* Adiciona espaço inferior entre as imagens */
+    object-fit: cover;
+    object-position: top;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #121542;
+    height: 25vh;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+footer img {
+    width: 35px;
+}
+
+.footer-links-container {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    margin-bottom: 35px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.links-container {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.links-container li  {
+    list-style: none;
+    -decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.textDropdown {
+    padding: 5px;
+}
+
+.textDropdown:hover {
+    background-color: #5d5858;
+    
+} 

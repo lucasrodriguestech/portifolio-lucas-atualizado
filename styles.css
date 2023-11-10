@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald&family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:  "Poppins";
+    color: #fff;
+    flex-wrap: nowrap;
+}
+
+.background-container {
+    background-image: url(./assets/6938839_3409297.jpg);
+    object-fit: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+
+    /* Adicione o pseudoelemento ::before para a sombra */
+    &::before {
+        content: "";
+        position: absolute;
+        transform: rotate(180deg);
+        bottom: 0;
+        width: 100%;
+        height: 35%; 
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+        z-index: 1; 
+    } 
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75px;
+    margin-top: 35px;
+}
+
+header img {
+    width: 65px;
+}
+
+.links-container {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.links-container li  {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.banner-text {
+    width: 600px;
+    margin: 55px auto 0 55px;
+    
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    flex-wrap: nowrap;
+}
+
+.calltoaction-container {
+    margin-top: 250px;
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 800px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.main-cards-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: auto;
+    margin: 0;
+    align-items: center;
+   justify-content: center;
+    padding-top:75px;
+}
+.main-cards-container h1 {
+    font-size: 3rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 35px;
+    width: 80%;
+    transition: all .2s;
+    
+}
+
+.card-container {
+    padding: 20px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.09);
+    text-align: center;
+    box-shadow: 0 1px 15px rgba(145, 122, 122, 0.2);
+    backdrop-filter: blur(14px);
+    width: 290px;
+    height: 400px;
+    transition: all .3s;
+}
+
+.card-container:hover {
+    transform: scale(1.03);
+}
+
+.hobbies-backgrond-container {
+    background-image: url(./assets/mountain-and-red-light-trails.png);
+    object-fit: cover;
+    min-height: 100vh;
+    height: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 35%; 
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+        z-index: -0; 
+    } 
+}
+
+.hobbies-backgrond-container h1 {
+    font-size: 3rem;
+    padding-top: 120px;
+    padding-left: 75px;
+    z-index: 999;
+    position: relative;
+}
+
+.hobbies-backgrond-container p {
+    width: 600px;
+    padding-left: 75px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #121542;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 35px;
+}
+
+.footer-links-container {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    margin-bottom: 35px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.hobbies-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+.hobbies-card-container {  
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.09);
+    text-align: center;
+    backdrop-filter: blur(14px);
+    width: 400px;
+    height: 550px;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hobbies-imagem-card {
+    height: 350px;
+    width: inherit;
+    top: 0;
+    border-radius: 6px;
+}
+
+.hobbies-titulo-card {
+    font-size: 1.5rem;
+   
+}
+
+.hobbies-text-card {
+    text-align: center;
+    display: -webkit-box;
+     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  /*  overflow: auto; */
+    padding: 5px;
+    width: 350px;
+    height: 300px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1800px) {
+
+    .main-cards-container {
+        height: auto;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+    }
+
+    .hobbies-backgrond-container {
+        height: auto;
+        background-size: cover;
+    }
+
+    .hobbies-backgrond-container h1 {
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+
+    .hobbies-backgrond-container p {
+        width: 90%;
+        padding-left: 5%;
+        z-index: 999;
+        position: relative;
+    }
+
+    .hobbies-main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+
+    .hobbies-card-container {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        max-width: 400px;
+    }
+
+    .hobbies-imagem-card {
+        height: 40%;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .hobbies-text-card {
+        width: 100%;
+        padding: 5px;
+        height: auto;
+        -webkit-line-clamp: initial;
+        overflow: initial;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobbies-main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .banner-text h1 {
+        font-size: 2rem;
+        flex-wrap: nowrap;
+        width: 400px;
+    }
+
+    .main-cards-container {
+        height: auto;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-text p{
+        width: 400px;
+    }
+
+    .calltoaction-container {
+        margin-top: 25%;
+        max-width: 90%;
+    }
+
+    
+
+    footer {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .footer-links-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    /* ... Outros estilos para telas menores ... */
+}
+
+@media (max-width: 600px) {
+    .banner-text {
+        padding: 0;
+        margin-top: 35px;
+        margin-left: 35px;
+        margin-right: auto;
+        align-items: center;
+        position: relative;
+    }
+
+    .banner-text h1 {
+        font-size: 1.5rem;
+        flex-wrap: nowrap;
+        width: 300px;
+        text-align: center;
+    }
+
+    .banner-text p{
+        width: 300px;
+        text-align: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hobbies-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

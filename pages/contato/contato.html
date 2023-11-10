@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./contato.css">
+    <script src="https://kit.fontawesome.com/720eb943ab.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="bg-container-header">
+        <h1 class="">CONTATO</h1>    
+    </div>
+
+    
+        <div class="menu-container" onclick="dropDown()">
+            . . .
+            <!-- <i class="fa-solid fa-ellipsis fa-xl"></i>  -->
+        </div>
+    
+        
+    
+    
+    <main class="contato-container">
+        <h2>Fale comigo!</h2>
+        <div class="boxes-container">
+            <div class="box-container">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+                <h4>Endereço</h4>
+                <span>Londrina-pr Brasil</span>
+            </div>
+            <hr>
+            <div class="box-container">
+                <i class="fa-brands fa-whatsapp fa-lg"></i>
+                <h4>WhatsApp</h4>
+                <span>(43) 98486-6569</span>
+            </div>
+            <hr>
+            <div class="box-container">
+                <i class="fa-regular fa-envelope fa-lg"></i>
+                <h4>Email</h4>
+                <span>lucasrodriguestech@gmail.com</span>
+            </div>
+            
+            
+            
+        </div>
+
+        <h3>Deixe sua mensagem!</h3>
+        <form  name="contact" method="POST" data-netlify="true">
+            <input type="text" name="nome"  id="nome" placeholder="Seu Nome">
+            <input type="text" name="email" id="email" placeholder="Seu Email">
+            <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+            <textarea placeholder="Mensagem" name="mensagem" value="mensagem" id="mensagem" style="height: 210px;" ></textarea>         
+            <button onclick="enviarMensagem()">Enviar Mensagem</button>
+        </form>
+    </main>
+
+   
+    
+    
+
+    <footer>
+        <div class="copyright-container">
+            <p>Desenvolvido por Lucas Rodrigues</p>
+        </div>
+        
+        <div class="footer-links-container">
+            <img src="../../assets/logo.png" alt="">
+            
+            <div class="links-container">
+                <a href="../../index.html">
+                    <li>Home</li>
+               </a>
+               
+               
+               <a href="#">
+                   <li>Contato</li>
+               </a>
+
+                <a href="../portifolio/index.html">
+                    <li>Portifólio</li>
+                </a>
+            </div>
+
+            <div class="icons-container">
+                <a href="https://www.instagram.com/lucasrodriigues13/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-xl"></i>  
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-rodrigues-048006151/" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-xl"></i> 
+                </a>
+
+                <a href="https://github.com/lucasrodriguestech" target="_blank">
+                    <i class="fa-brands fa-github fa-xl"></i> 
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="./contato.js"></script>
+</body>
+</html>
