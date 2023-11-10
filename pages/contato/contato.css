@@ -293,6 +293,10 @@ footer img {
     .contato-container form textarea {
         width: 60%;
     }
+
+    .links-container {
+        display: none;
+    }
 }
 
 .textDropdown {

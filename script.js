@@ -114,3 +114,54 @@ hobbiesCardsContainer.appendChild(hobbyCardContainer);
 
 
 })
+
+function abrirMenu() {
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-container');
+
+    // Adicione um botão de fechar (X) ao menu
+    const closeButton = document.createElement('span');
+    closeButton.innerHTML = '&times;';
+    closeButton.classList.add('close-button');
+    closeButton.onclick = fecharMenu;
+
+    // Adicione o botão de fechar antes dos outros elementos do menu
+    menuContainer.appendChild(closeButton);
+
+    // Adicione links para Contato e Portfólio
+    const linkContato = document.createElement('div');
+    linkContato.classList.add('link-container');
+    linkContato.onclick = function () {
+        window.location.href = "./pages/contato/contato.html";
+      
+    };
+
+    const linkPortifolio = document.createElement('div');
+    linkPortifolio.classList.add('link-container');
+    linkPortifolio.onclick = function () {
+        window.location.href = "./pages/portifolio/index.html";
+        
+    };
+
+    const textContato = document.createElement('p');
+    textContato.innerText = 'Contato';
+    textContato.classList.add('text-link');
+
+    const textPortifolio = document.createElement('p');
+    textPortifolio.innerText = 'Portifólio';
+    textPortifolio.classList.add('text-link');
+
+    document.body.appendChild(menuContainer);
+    menuContainer.appendChild(linkContato);
+    menuContainer.appendChild(linkPortifolio);
+    linkContato.appendChild(textContato);
+    linkPortifolio.appendChild(textPortifolio);
+}
+
+
+function fecharMenu() {
+    const menuContainer = document.querySelector('.menu-container');
+    if (menuContainer) {
+        document.body.removeChild(menuContainer);
+    }
+}

@@ -10,6 +10,11 @@
     flex-wrap: nowrap;
 }
 
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
 .background-container {
     background-image: url(./assets/6938839_3409297.jpg);
     object-fit: cover;
@@ -18,7 +23,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    
+    overflow-x: hidden;
 
     /* Adicione o pseudoelemento ::before para a sombra */
     &::before {
@@ -234,6 +239,10 @@ footer img {
     padding-top: 10px;
 }
 
+.hamburguer-container {
+    display: none;
+}
+
 @media (max-width: 1800px) {
 
     .main-cards-container {
@@ -346,24 +355,28 @@ footer img {
 
 @media (max-width: 600px) {
     .banner-text {
-        padding: 0;
-        margin-top: 35px;
-        margin-left: 35px;
-        margin-right: auto;
-        align-items: center;
+
+        margin-left: auto ;
+        margin-right: auto ;
+        width: 90%;
+        text-align: center;
         position: relative;
+        z-index: 999;
     }
 
     .banner-text h1 {
         font-size: 1.5rem;
         flex-wrap: nowrap;
         width: 300px;
+        width: 80%;
         text-align: center;
+        margin: 0 auto;
     }
 
     .banner-text p{
-        width: 300px;
+        width: 80%;
         text-align: center;
+        margin: 10px auto;
     }
 
     .cards-container {
@@ -381,5 +394,52 @@ footer img {
         display: flex;
         flex-direction: column;
     }
+    .links-container {
+        display: none;
+    }
+
+    .hamburguer-container {
+        cursor: pointer;
+        display: block;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+        z-index: 1001;
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #121542;
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 55px;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 35px;
+
+    }
+
+    .text-link {
+        transition: all 1s ease;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 19px;
+    }
+
+    .text-link:hover {
+        background-color: rgb(15, 48, 48);
+    }
+    
 }
 

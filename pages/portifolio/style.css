@@ -154,3 +154,27 @@ footer img {
     background-color: #5d5858;
     
 } 
+
+.github-container {
+    display: flex;
+    justify-content: center;
+    
+
+}
+@media (max-width: 1280px) {
+    footer {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .footer-links-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .links-container {
+        display: none;
+    }
+}
