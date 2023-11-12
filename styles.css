@@ -24,6 +24,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    position: relative;
+    z-index: 1;
 
     /* Adicione o pseudoelemento ::before para a sombra */
     &::before {
@@ -38,14 +40,24 @@ body {
     } 
 }
 
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: justify;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 75px;
-    margin-top: 35px;
+    padding: 0 20px;
 }
 
 header img {
@@ -55,6 +67,7 @@ header img {
 .links-container {
     display: flex;
     gap: 30px;
+    align-items: center;
     
 }
 
@@ -67,6 +80,7 @@ header img {
 }
 
 .banner-text {
+    padding-top: 33px;
     width: 600px;
     margin: 55px auto 0 55px;
     

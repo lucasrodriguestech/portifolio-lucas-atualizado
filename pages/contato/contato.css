@@ -17,6 +17,13 @@ body {
     margin: 0;
 }
 
+body h1 {
+    text-align: center;
+    padding: 35px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
 .bg-container-header {
     background-image: url(../../assets/cidade.png);
     height: 50vh;
@@ -100,10 +107,11 @@ form input {
 }
 
 form textarea {
-    width: 450px;
+    max-width: 450px;
     background-color: #474343;
     padding: 10px;
     text-align: start;
+
 }
 
 form button {
@@ -293,7 +301,7 @@ footer img {
     }
 
     .contato-container form textarea {
-        width: 70%;
+        max-width: 70%;
     }
 
     .links-container {

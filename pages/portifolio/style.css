@@ -177,4 +177,8 @@ footer img {
     .links-container {
         display: none;
     }
+
+    .bg-container-header h1 {
+        font-size: 2rem;
+    }
 }
