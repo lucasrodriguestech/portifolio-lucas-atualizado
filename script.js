@@ -35,25 +35,21 @@ const cards = [
 
 const hobbiesCards = [
     {
-        title: 'Capoeira',
-        text: 'Arte marcial, a capoeira permite desfrutar da musicalidade, da parte funcional também, basicamente a capoeira é um jogo corporal de inteligência, é uma arte completa',
-        img: './assets/1(1).png',
+        title: 'Sites Institucionais',
+        text: 'Sites completos ou landing pages para empresas. Sites bonitos, modernos, miniamalistas etc',
+        img: './assets/website-vmc.png',
     },
     {
-        title: 'Musculação',
-        text: 'Academia para mim não é esforço, para mim é descanso, se por acaso eu não dormir bem a noite, a academia vou para obter energia para lidar com restante do dia',
-        img: './assets/2(1).png',
+        title: 'Aplicações',
+        text: 'Softwares que automatizam funções',
+        img: './assets/projeto-tarefas.png',
     },
     {
-        title: 'Leitura',
-        text: 'Ler bons livros é essencial para obter informações de qualidade e relaxar também, então aprendi a gostar e não vivo sem meu kindle',
-        img: './assets/3(1).png',
+        title: 'Páginas de contato',
+        text: 'Pode ser formulários ou sites de captura de contato, estilizados para o seu negócio',
+        img: './assets/contato.png',
     },
-    {
-        title: 'Família',
-        text: 'É o chão da minha vida, minha esposa e minha filha são os maiores presentes que Deus me deu',
-        img: './assets/4(1).png',
-    },
+   
 ]
 const mainCardsContainer = document.querySelector('.main-cards-container');
 

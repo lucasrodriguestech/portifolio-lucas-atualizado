@@ -107,6 +107,7 @@ form input {
 }
 
 form textarea {
+    min-width: 450px;
     max-width: 450px;
     background-color: #474343;
     padding: 10px;
@@ -279,7 +280,9 @@ footer img {
     }
 
     .contato-container form textarea {
-        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+        
     }
 
     footer {
@@ -302,6 +305,7 @@ footer img {
 
     .contato-container form textarea {
         max-width: 70%;
+        min-width: 70%;
     }
 
     .links-container {
